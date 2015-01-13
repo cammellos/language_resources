@@ -67,11 +67,6 @@ lazy val root = (project in file(".")).
     // disable using the Scala version in output paths and artifacts
     crossPaths := false,
 
-    // fork a new JVM for 'run' and 'test:run'
-    fork := true,
-
-    // fork a new JVM for 'test:run', but not 'run'
-    fork in Test := true,
 
     // add a JVM option to use when forking a JVM for 'run'
     javaOptions += "-Xmx2G",
